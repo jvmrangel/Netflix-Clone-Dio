@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+    background-color: var(--preto);
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    min-width: 450px;
+}
+
+header{
+
+    background: linear-gradient( rgba(20,20,20,.70), rgba(20,20,20,0));
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 30px; */
+    vertical-align: middle;
+    height: 68px;
+
+}
+
+.header-logo{
+    height: 25px;
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url(../resources/imagens/BreakingBad-CAPA.jpg);
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 45px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    border-radius:4px;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+   
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.container{
+    margin: 0px 53px;
+}
+
+.filme-principal .container{
+    width: 45%;
+}
+
+.box-serie{
+    height: 300px;
+    width: auto;
+    display: block;
+}
+
+
+
+.carrossel-serie{
+    margin-top: 5px;
+}
